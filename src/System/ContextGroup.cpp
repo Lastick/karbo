@@ -85,7 +85,7 @@ void ContextGroup::wait() {
     context->next = nullptr;
 
     assert(!context->inExecutionQueue);
-    context->inExecutionQueue = true;
+    //context->inExecutionQueue = true;
 
     if (contextGroup.firstWaiter != nullptr) {
       assert(contextGroup.lastWaiter->next == nullptr);
